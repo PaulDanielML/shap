@@ -1,3 +1,7 @@
+## Identical to original repo, just added various fixes for plotting and cohorts.
+
+    pip install git+http:////github.com/PaulDanielML/shap
+
 
 
 <p align="center">
