@@ -563,7 +563,7 @@ def decision(
     if plot_color is None:
         plot_color = colors.red_blue
 
-    __decision_plot_matplotlib(
+    fig = __decision_plot_matplotlib(
         base_value,
         cumsum,
         ascending,
@@ -585,7 +585,7 @@ def decision(
     )
 
     if not return_objects:
-        return None
+        return fig
 
     return DecisionPlotResult(base_value_saved, shap_values, feature_names, feature_idx, xlim)
 
